@@ -1,0 +1,69 @@
+/* TAG BODY */
+body {
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* TAG SETTING SECTION */
+.sec1 {
+    background-color: red;
+    min-height: 200px;
+    min-width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+.sec2 {
+    background-color: yellow;
+    min-height: 200px;
+    min-width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+.sec3 {
+    background-color: pink;
+    min-height: 200px;
+    min-width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+/* START MEDIA QUERY */
+
+/* Mobile device : 160px s/d 480px */
+@media only screen and (min-width: 160px) and (max-width: 480px) {
+    .sec1 {
+        width: 100%;
+    }
+    .sec2 {
+        width: 100%;
+    }
+    .sec3 {
+        width: 100%;
+    }
+}
+
+/* Tablet device : 481px s/d 780px */
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+    .sec1 {
+        width: 100%;
+    }
+    .sec2, .sec3 {
+        width: 50%;
+        height: 320px;
+    }
+    .d2 {
+       gap: 22px;
+       display: flex;
+    }
+}
+
+/* Desktop device : 781px s/d 2400px */
+@media only screen and (min-width: 781px) and (max-width: 2400px) {
+    .sec1 {
+        width: 60%;
+    }
+    .sec2 {
+        width: 60%;
+    }
+    .sec3 {
+        width: 60%;
+    }
+}

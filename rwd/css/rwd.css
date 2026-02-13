@@ -1,0 +1,36 @@
+/* TAG Body */
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+/* TAG GLOBAL SETTING SECTION */
+section {
+    min-height: 300px;
+    margin: 1px auto;
+}
+
+/* START MEDIA QUERY */
+
+/* Mobile device : 160px s/d 480px */
+@media only screen and (min-width: 160px) and (max-width: 480px) {
+    section {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+/* Tablet device : 481px s/d 780px */
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+    section {
+        width: 80%;
+        background-color: green;
+    }
+}
+
+/* Desktop device : 781px s/d 2400px */
+@media only screen and (min-width: 781px) and (max-width: 2400px) {
+    section {
+        width: 60%;
+        background-color: yellow;
+    }
+}
